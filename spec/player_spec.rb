@@ -8,7 +8,7 @@ module TicTacToe
         expect { Player.new({}) }.to raise_error(KeyError)
       end
 
-      it 'does not raise an error when initialized with a valid inut hash' do
+      it 'does not raise an error when initialized with a valid init hash' do
         input = { color: 'X', name: 'Someone' }
         expect { Player.new(input) }.to_not raise_error
       end
