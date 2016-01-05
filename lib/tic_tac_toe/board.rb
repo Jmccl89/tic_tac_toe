@@ -23,5 +23,9 @@ module TicTacToe
       return :draw if draw?
       false
     end
+
+    def draw?
+      grid.flatten.map { |cell| cell.value }.none_empty?
+    end
   end
 end
