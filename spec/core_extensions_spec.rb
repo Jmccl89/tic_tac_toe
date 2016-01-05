@@ -18,11 +18,11 @@ describe Array do
 
   describe '#all_same?' do
     it 'returns true if all elements of the Array are the same' do
-      expect(['A', 'A', 'A'].all_same?).to be true
+      expect(%w(A A A).all_same?).to be true
     end
 
     it 'returns false if some of the elements of the Array are different' do
-      expect(['A', 'B', 'C'].all_same?).to be false
+      expect(%w(A B C).all_same?).to be false
     end
 
     it 'returns true for an empty Array' do
@@ -36,7 +36,7 @@ describe Array do
     end
 
     it 'returns false when no element is empty' do
-      expect(['1', '2', '3'].any_empty?).to be false
+      expect(%w(1 2 3).any_empty?).to be false
     end
 
     it 'returns false for an empty array' do
@@ -46,8 +46,7 @@ describe Array do
 
   describe '#none_empty?' do
     it 'returns false if no element is empty' do
-      expect(['1', '2', '3'].any_empty?).to be false
-      
+      expect(%w(1 2 3).any_empty?).to be false
     end
 
     it 'returns true if any element is empty' do
