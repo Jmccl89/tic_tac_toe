@@ -25,7 +25,7 @@ module TicTacToe
     end
 
     def draw?
-      grid.flatten.map { |cell| cell.value }.none_empty?
+      grid.flatten.map(&:value).none_empty?
     end
 
     def winning_positions
@@ -34,8 +34,8 @@ module TicTacToe
 
     def diagonals
       [
-        [get_cell(0,0), get_cell(1,1), get_cell(2,2)],
-        [get_cell(0,2), get_cell(1,1), get_cell(2,0)]
+        [get_cell(0, 0), get_cell(1, 1), get_cell(2, 2)],
+        [get_cell(0, 2), get_cell(1, 1), get_cell(2, 0)]
       ]
     end
 
@@ -48,7 +48,7 @@ module TicTacToe
     end
 
     def winning_position_values(winning_position)
-      winning_position.map { |cell| cell.value }
+      winning_position.map(&:value)
     end
   end
 end
