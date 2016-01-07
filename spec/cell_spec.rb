@@ -6,7 +6,7 @@ module TicTacToe
     describe '#initialize' do
       it "is initialized with a value of ' ' by default" do
         cell = Cell.new
-        expect(cell.value).to eq ' '
+        expect(cell.value).to eq ''
       end
 
       it "can be initialized with a value of 'X'" do
