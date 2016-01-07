@@ -1,7 +1,8 @@
 ## Code Status
+
 [![Code Climate](https://codeclimate.com/github/Jmccl89/tic_tac_toe/badges/gpa.svg)](https://codeclimate.com/github/Jmccl89/tic_tac_toe)
 [![Coverage Status](https://coveralls.io/repos/Jmccl89/tic_tac_toe/badge.svg?branch=master&service=github)](https://coveralls.io/github/Jmccl89/tic_tac_toe?branch=master)
-[![Code Climate](https://codeclimate.com/github/Jmccl89/tic_tac_toe/badges/gpa.svg)](https://codeclimate.com/github/Jmccl89/tic_tac_toe)
+[![Dependency Status](https://gemnasium.com/Jmccl89/tic_tac_toe.svg)](https://gemnasium.com/Jmccl89/tic_tac_toe)
 
 ## Installation
 
